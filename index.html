@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="window">
+
+                <div class="w-header">
+                    <div class="w-head">
+                        <div>
+                            <img src="img/1094.ico" alt="">
+                            <span>Document Name</span>
+                        </div>
+                        <div>
+                            <button>X</button>
+                        </div>
+                    </div>
+                    <div class="w-nav">
+                        <div class="w-nav-list">
+                            <ul>
+                                <li>File</li>
+                                <li>Edit</li>
+                                <li>View</li>
+                                <li>Favorites</li>
+                                <li>Tools</li>
+                                <li>Help</li>
+                            </ul>
+                        </div>
+                        <div class="w-nav-btn">
+                            <img src="img/XJ8Yc1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-content"></div>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="start-btn">
+                <button onclick="alert('emre')">
+                    <img src="img/start.png" alt="">
+                    <span>START</span>
+                </button>
+            </div>
+            <div class="time-btn">
+                <div class="time-icon">
+                    <img src="img/1390.ico" alt="">
+                    <img src="img/1094.ico" alt="">
+                </div>
+
+                <div class='time-frame'>
+                    <div id='saat-bolumu'></div>
+                    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+                    <script type="text/javascript"
+                        src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+                    <script type="text/javascript">
+                        $(window).load(function () {
+                            $(document).ready(function () {
+                                var interval = setInterval(function () {
+                                    var momentNow = moment();
+                                    $('#saat-bolumu').html(momentNow.format('hh:mm:ss'));
+                                }, 100);
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
