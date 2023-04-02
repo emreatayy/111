@@ -24,6 +24,7 @@
     display: flex;
     left: 600px;
     top: 100px;
+    flex-direction: column;
 }
 
 .w-header{
@@ -79,8 +80,30 @@
   width: 100%;
 }
 
+.w-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
 
+.w-content>:nth-child(1){
+  background-color: red;
+  height: 100%;
+  width: 35%;
+}
 
+.w-content>:nth-child(1) img{
+  height: 94%;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.w-content>:nth-child(2){
+  background-color: red;
+  width: 100%;
+  height: 100%;
+}
 
 
 
